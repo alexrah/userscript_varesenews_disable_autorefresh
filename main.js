@@ -1,19 +1,18 @@
 // ==UserScript==
-// @name Disable AutoRefresh
-// @name:fr Disable AutoRefresh
-// @namespace Disable AutoRefresh
-// @description Disable AutoRefresh is a user script to override and disable meta refresh html tag on all websites to prevent the automatic refresh or redirection.
-// @description:fr Disable AutoRefresh est un user script pour annuler et désactiver le tag html Meta refresh sur tous les sites web et empêcher le rafraîchissement automatique ou la redirection vers une autre page / site web.
+// @name VareseNews Disable AutoRefresh
+// @namespace VareseNews Disable AutoRefresh
+// @description [FORK] Disable AutoRefresh is a user script to override and disable meta refresh html tag on all websites to prevent the automatic refresh or redirection.
 // @author SMed79, alexrah
-// @version 2.0
-// @encoding utf-8
+// @version 1.0
 // @license https://creativecommons.org/licenses/by-nc-sa/4.0/
 // @icon http://i.imgur.com/ZJ9mHLO.png
-// @twitterURL https://twitter.com/SMed79
-// @contactURL http://tinyurl.com/contact-smed79
-// @supportURL https://greasyfork.org/fr/scripts/16079-disable-autorefresh/feedback
-// @include http://*
-// @include https://*
+// @supportURL https://github.com/alexrah/userscript_varesenews_disable_autorefresh/issues
+// @match   https://*.varesenews.it/
+// @match   https://*.v2media.it/
+// @match   https://*.malpensanews.it/
+// @match   https://*.saronnonews.it/
+// @match   https://*.verbanonews.it/
+// @match   https://*.malpensanews.com/
 // @run-at document-start
 // @grant none
 // ==/UserScript==
