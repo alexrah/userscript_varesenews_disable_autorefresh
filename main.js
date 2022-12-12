@@ -3,7 +3,7 @@
 // @namespace VareseNews Disable AutoRefresh
 // @description [FORK] Disable AutoRefresh is a user script to override and disable meta refresh html tag on all websites to prevent the automatic refresh or redirection.
 // @author SMed79, alexrah
-// @version 0.2.0
+// @version 1.0.0
 // @license https://creativecommons.org/licenses/by-nc-sa/4.0/
 // @icon http://i.imgur.com/ZJ9mHLO.png
 // @supportURL https://github.com/alexrah/userscript_varesenews_disable_autorefresh/issues
@@ -45,15 +45,14 @@ http://www.isthe.com/chongo/tech/comp/cgi/index.html
         //     timeout : .5
         // }
         // ];
+        rules = [];
 
         allMetas = document.getElementsByTagName('meta');
         for (var i = 0; i < allMetas.length; i++) {
             thisMeta = allMetas[i];
 
             if (thisMeta.httpEquiv.match(/refresh/i)) {
-                if (thisMeta.content.match(/[\D]/)) {
-
-                    console.log('thisMeta.content matched%c','color: pink', thisMeta.content );
+                if (thisMeta.content.match(/[0-9]+/)) {
 
                     content = thisMeta.content.split(';');
                     timeout = content[0] - 1;
@@ -67,7 +66,7 @@ http://www.isthe.com/chongo/tech/comp/cgi/index.html
 
                     timeout_ms = (timeout > 0) ? (timeout * 1e3) : 0;
                     setTimeout(function () {
-                        console.log('Redirection stopped after ' + timeout_ms + ' ms%c','color: pink');
+                        console.log('%cRedirection stopped after ' + timeout_ms + ' ms','color: orange');
                         window.stop();
                     }, timeout_ms);
                 }
