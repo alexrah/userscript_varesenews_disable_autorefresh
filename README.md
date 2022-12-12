@@ -10,6 +10,7 @@ code forked from [https://greasyfork.org/en/scripts/16079-disable-autorefresh/co
 1. Install TamperMonkey/GreaseMonkey extension for Chrome/Firefox
 2. Go the extension dashboard, Utilities tab
 3. In the "Install from URL" field paste the following:
+4. [https://raw.githubusercontent.com/alexrah/userscript_varesenews_disable_autorefresh/master/main.js](https://raw.githubusercontent.com/alexrah/userscript_varesenews_disable_autorefresh/master/main.js)
 
 ## Usage
 Now, browsing to the homepage on [VareseNews.it](https://www.varesenews.it/), the page should not autorefresh.
