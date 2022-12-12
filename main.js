@@ -3,7 +3,7 @@
 // @namespace VareseNews Disable AutoRefresh
 // @description [FORK] Disable AutoRefresh is a user script to override and disable meta refresh html tag on all websites to prevent the automatic refresh or redirection.
 // @author SMed79, alexrah
-// @version 1.0.0
+// @version 1.1.0
 // @license https://creativecommons.org/licenses/by-nc-sa/4.0/
 // @icon http://i.imgur.com/ZJ9mHLO.png
 // @supportURL https://github.com/alexrah/userscript_varesenews_disable_autorefresh/issues
@@ -12,7 +12,7 @@
 // @match   https://*.malpensanews.it/*
 // @match   https://*.saronnonews.it/*
 // @match   https://*.verbanonews.it/*
-// @match   https://*.malpensanews.com/*
+// @match   https://*.legnanonews.com/*
 // @run-at document-start
 // @grant none
 // @downloadURL https://raw.githubusercontent.com/alexrah/userscript_varesenews_disable_autorefresh/master/main.js
